@@ -1,4 +1,4 @@
-package io.github.chubbyhippo.v2ch10.simpleframe;
+package io.github.chubbyhippo.v2ch10.simpleFrame;
 
 import module java.desktop;
 
