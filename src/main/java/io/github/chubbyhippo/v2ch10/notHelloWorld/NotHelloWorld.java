@@ -1,4 +1,4 @@
-package io.github.chubbyhippo.v2ch10.nothelloworld;
+package io.github.chubbyhippo.v2ch10.notHelloWorld;
 
 import module java.desktop;
 
