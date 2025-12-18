@@ -8,6 +8,8 @@ public class NotHelloWorld {
             var frame = new NotHelloWorldFrame();
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
+
+            frame.setResizable(true);
         });
     }
 }
@@ -17,6 +19,7 @@ public class NotHelloWorld {
  */
 class NotHelloWorldFrame extends JFrame {
     public NotHelloWorldFrame() {
+        setLayout(new GridBagLayout());
         add(new NotHelloWorldComponent());
         pack();
     }
