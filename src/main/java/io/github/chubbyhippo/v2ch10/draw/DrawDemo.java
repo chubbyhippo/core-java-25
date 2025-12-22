@@ -3,7 +3,24 @@ package io.github.chubbyhippo.v2ch10.draw;
 import module java.desktop;
 
 class DrawDemo {
+    void main() {
+        EventQueue.invokeLater(() -> {
+            var frame = new DrawFrame();
+            frame.setTitle("DrawTest");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setVisible(true);
+        });
+    }
 
+}
+/**
+ * A frame that contains a panel with drawings.
+ */
+class DrawFrame extends JFrame {
+    public DrawFrame() {
+        add(new DrawComponent());
+        pack();
+    }
 }
 
 /**
@@ -18,6 +35,7 @@ class DrawComponent extends JComponent {
         var g2 = (Graphics2D) g;
 
         // draw a rectangle
+
         double leftX = 100;
         double topY = 100;
         double width = 200;
@@ -30,6 +48,7 @@ class DrawComponent extends JComponent {
 
         var ellipse = new Ellipse2D.Double();
         ellipse.setFrame(rect);
+        g2.draw(ellipse);
 
         // draw a diagonal line
 
